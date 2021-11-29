@@ -39,7 +39,7 @@ function comecarEtapa(){
         colaVoto += `<div class="nomesCola">Nome: ${etapa.candidatos[i].nome}<br> Número: ${etapa.candidatos[i].numero}<br></div>`
     }
 
-    cola.innerHTML = colaVoto;
+    cola.innerHTML = `<div class="nomesCola">${etapa.titulo}</div>` +colaVoto;
 
 }
 
@@ -138,10 +138,5 @@ function confirma(){
         }
     }
 }
-
-
-
- 
-
 
 comecarEtapa();

@@ -158,5 +158,16 @@ body{
     font-size: 40px;
     display:flex;
     justify-content: center;
-    padding-top:20px
+    padding-top:20px;
+    font-weight: bold;
+}
+
+.aviso-gg{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

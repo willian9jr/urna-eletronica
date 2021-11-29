@@ -4,6 +4,7 @@ let descricao = document.querySelector('.d-1-4');
 let aviso = document.querySelector('.d-2');
 let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.d-1-3');
+let cola = document.querySelector('.canditadatos');
 
 let etapaAtual = 0;
 let numero = '';
@@ -32,7 +33,16 @@ function comecarEtapa(){
     aviso.style.display = 'none';
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHtml;
+
+    let colaVoto = '';   
+    for(let i in etapa.candidatos){
+        colaVoto += `<div class="nomesCola">Nome: ${etapa.candidatos[i].nome}<br> Número: ${etapa.candidatos[i].numero}<br></div>`
+    }
+
+    cola.innerHTML = colaVoto;
+
 }
+
 
 function atualizaInterface(){
     let etapa = etapas[etapaAtual];
@@ -128,5 +138,10 @@ function confirma(){
         }
     }
 }
+
+
+
+ 
+
 
 comecarEtapa();

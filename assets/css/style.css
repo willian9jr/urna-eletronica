@@ -12,12 +12,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container{
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .urna{
     background-color: #dbd5c9;
     justify-content: center;
     align-items: center;
     padding:30px;
     display:flex;
+    margin-top: 10px;
 }
 
 .tela{
@@ -170,4 +179,17 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.canditadatos{
+    background-color:#C1C1C1;
+    border: 1px solid black;
+    min-height:80px;
+    min-width:200px;
+    margin-top: 10px;
+}
+
+.nomesCola{
+    padding: 10px 5px;
+    border-bottom: 2px solid black;
 }
